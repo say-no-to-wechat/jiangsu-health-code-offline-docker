@@ -10,7 +10,7 @@ For example, if you want to host the healthcode at `http://localhost:80`:
 docker run -tid --restart=always --log-opt max-size=10M -p 80:80 --name healthcode ghcr.io/say-no-to-wechat/jiangsu-health-code-offline-docker:master
 ```
 
-Further more, you can set some environment variables to modify personal information and prefix URL. Like this: 
+Further more, you can set some **optional** environment variables to modify personal information and prefix URL. Like this: 
 
 ```
 -e NAME=中华鲟 -e PHONE=15311112222 -e IDCARD="111******222" -e URL_PREFIX="https://my-reverse-proxy.com/my-path"
