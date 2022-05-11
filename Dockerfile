@@ -6,7 +6,7 @@ copy . /src
 run cd /src && \
     ./download-latest-zip.sh && \
     unzip latest.zip && \
-    mv /src/jiangsu-health-code-offline/repo /repo
+    mv /src/jiangsu-health-code-offline/repo/prebuilt /repo
 run mv /src/nginx.conf /etc/nginx/nginx.conf
 run echo '<html><script>window.location.replace("jkmIndex.html?token=1")</script>redirecting...</html>' > /repo/index.html
 
